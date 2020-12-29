@@ -59,8 +59,8 @@ export default {
     margin: 10px;
     padding: 5px;
     height: 350px;
-    width: 204px;
     text-align: center;
+    width: 204px;
 
     &:hover {
         transform: scale(1.03);
