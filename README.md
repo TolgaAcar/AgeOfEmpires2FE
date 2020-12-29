@@ -1,7 +1,7 @@
 # Age Of Empires 2 Frontend
 
-Web Application developed with Vue 3
-Consumes [Age of Empires 2 Api](https://github.com/TolgaAcar/AgeOfEmpires2Api)
+- Web Application developed with Vue 3
+- Consumes [Age of Empires 2 Api](https://github.com/TolgaAcar/AgeOfEmpires2Api)
 
 ## Current Features
 
