@@ -18,15 +18,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header-img-wrapper {
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
+    justify-content: center;
+    display: flex;
 
-.header-img {
-    max-width: 100%;
-    height: auto;
+    .header-img {
+        height: auto;
+        max-width: 100%;
+    }
 }
 </style>

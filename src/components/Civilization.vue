@@ -48,58 +48,59 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .civilization {
     border: 1px solid white;
     border-collapse: collapse;
     border-radius: 8px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    width: 204px;
-    height: 350px;
-    text-align: center;
     margin: 10px;
     padding: 5px;
-}
+    height: 350px;
+    width: 204px;
+    text-align: center;
 
-.civilization:hover {
-    transform: scale(1.03);
-}
+    &:hover {
+        transform: scale(1.03);
+    }
 
-.civ-name {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-}
+    .civ-name {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
 
-.civ-banner {
-    width: 104px;
-    height: 104px;
-    align-self: center;
-    margin: 20px;
-}
+    .civ-banner {
+        align-self: center;
+        margin: 20px;
+        height: 104px;
+        width: 104px;
+    }
 
-.civ-info {
-    font-size: 12px;
-}
+    .civ-info {
+        font-size: 12px;
 
-table {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    margin-bottom: 20px;
-}
+        table {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            margin-bottom: 20px;
+        }
 
-.civ-unique-unit {
-    display: flex;
-    justify-content: start;
-}
+        .civ-unique-unit {
+            display: flex;
+            justify-content: start;
 
-.unique-unit-content:not(:last-child) {
-    margin-right: 5px;
-}
+            .unique-unit-content:not(:last-child) {
+                margin-right: 5px;
+            }
 
-.unique-unit-img {
-    width: 25px;
-    height: 25px;
+            .unique-unit-img {
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
 }
 </style>

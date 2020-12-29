@@ -13,17 +13,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
+    color: white;
     font-family: Avenir, Helvetica, Arial, sans-serif;
+    margin-top: 60px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: white;
-    margin-top: 60px;
 }
 
 body {
-    background-image: url("https://i.hizliresim.com/jdAsk5.jpg");
     background-color: #383838;
+    background-image: url("https://i.hizliresim.com/jdAsk5.jpg");
 }
 </style>
