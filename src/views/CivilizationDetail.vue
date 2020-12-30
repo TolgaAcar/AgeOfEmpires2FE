@@ -56,6 +56,7 @@
 
 <script>
 import { useRoute } from "vue-router";
+import api from "../module/api/api";
 
 export default {
     name: "CivilizationDetail",
@@ -67,12 +68,9 @@ export default {
     beforeMount() {
         const route = useRoute();
         const civId = route.params.civId;
-        const url = `http://localhost:3000/civilizations/${civId}`;
+        const query = `civilizations/${civId}`;
 
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => (this.civilization = data))
-            .catch((err) => console.log(err));
+        api.fetchData(query).then((data) => (this.civilization = data));
     },
 };
 </script>

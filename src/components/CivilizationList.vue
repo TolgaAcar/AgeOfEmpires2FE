@@ -17,6 +17,7 @@
 
 <script>
 import Civilization from "./Civilization.vue";
+import api from "../module/api/api";
 
 export default {
     name: "CivilizationList",
@@ -29,11 +30,8 @@ export default {
         };
     },
     mounted() {
-        const url = "http://localhost:3000/civilizations";
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => (this.civs = data))
-            .catch((err) => console.log(err));
+        const query = "civilizations";
+        api.fetchData(query).then((data) => (this.civs = data));
     },
 };
 </script>
